@@ -5,7 +5,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import PreFooter from '../components/preFooter';
 import constants from '../const/index';
-import '../styles/fonts.scss';
+import './fonts.scss';
 import './layout.scss';
 
 const Page = props => (
@@ -27,7 +27,7 @@ const Page = props => (
 
       #page-layout > main {
         flex: 1;
-        margin-top: ${constants.HEADER_HEIGHT}px;
+        margin-top: ${constants.layout.HEADER_HEIGHT}px;
       }
 
       a {

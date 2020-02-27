@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { throttle } from 'lodash';
 
 import { ButtonLink } from '../uiComponents/button';
+
 import constants from '../const';
-import colors from '../styles/colors';
 
 export const HEADER_PAGE = {
   APIS: 'apis',
@@ -88,14 +88,14 @@ const Header = ({ headerKey = 'home', filter = '' }) => {
                   </Fragment>
                 ))}
                 <li className="external">
-                  <ButtonLink href={constants.mailto.REQUEST_API_MAILTO_LINK}>
+                  <ButtonLink href={constants.links.mailto.REQUEST_API}>
                     Demander une API
                   </ButtonLink>
                 </li>
               </>
             ) : (
               <li>
-                <a href={`${constants.SIGNUP_LINK}`}>Mes demandes</a>
+                <a href={`${constants.links.SIGNUP}`}>Mes demandes</a>
               </li>
             )}
           </ul>
@@ -131,7 +131,7 @@ const Header = ({ headerKey = 'home', filter = '' }) => {
           justify-content: space-between;
           flex-wrap: wrap;
           align-items: center;
-          height: ${constants.HEADER_HEIGHT}px;
+          height: ${constants.layout.HEADER_HEIGHT}px;
         }
         .nav__container > a:first-child {
           display: flex;
@@ -161,7 +161,7 @@ const Header = ({ headerKey = 'home', filter = '' }) => {
           align-items: center;
           justify-content: center;
           margin: 0;
-          height: ${constants.HEADER_HEIGHT}px;
+          height: ${constants.layout.HEADER_HEIGHT}px;
         }
 
         .nav__links li:after {
@@ -171,7 +171,7 @@ const Header = ({ headerKey = 'home', filter = '' }) => {
           margin: auto;
           width: 0%;
           height: 3px;
-          background-color: ${colors.blue};
+          background-color: ${constants.colors.blue};
           transition: width 200ms ease-in-out, opacity 200ms ease-in-out;
           opacity: 0;
         }
