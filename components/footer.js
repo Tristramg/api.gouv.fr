@@ -82,17 +82,26 @@ const Footer = () => {
               Améliorer cette page
             </a>
           </li>
+          <li>
+            <a href="/mentions-legales">Mentions Légales</a>
+          </li>
+          <li>
+            <a href="/vie-privee">Suivi d'audience & vie privée</a>
+          </li>
         </ul>
       </div>
 
       <style jsx>{`
         .footer a {
           opacity: 0.4;
+          text-decoration: none;
         }
 
         .footer a:hover,
         .footer a:focus {
           opacity: 1;
+          background-color: transparent;
+          text-decoration: underline;
         }
 
         .footer {
