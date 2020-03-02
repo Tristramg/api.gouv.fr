@@ -4,7 +4,7 @@ import Meta from '../components/meta';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import PreFooter from '../components/preFooter';
-import constants from '../const/index';
+import constants from '../constants';
 import './fonts.scss';
 import './layout.scss';
 

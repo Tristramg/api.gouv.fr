@@ -1,6 +1,6 @@
 import React from 'react';
 
-import constants from '../const';
+import constants from '../constants';
 import { ButtonLink } from '../uiComponents/button';
 
 const PreFooter = ({ background }) => (
